@@ -4,7 +4,7 @@ import pulumi
 from pulumi_aws import s3
 
 # Create an AWS resource (S3 Bucket)
-bucket = s3.Bucket('pulumi_my-bucket',
+bucket = s3.Bucket('pulumi-my-bucket',
     website=s3.BucketWebsiteArgs(
       index_document="index.html",
     )
